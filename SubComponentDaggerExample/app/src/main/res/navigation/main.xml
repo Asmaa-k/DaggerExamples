@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/fragmentOne"
+        android:name="com.example.subcomponentdaggerexample.ui.secondActivity.FragmentOne"
+        android:label="FragmentOne" />
+    <fragment
+        android:id="@+id/fragmentTwo"
+        android:name="com.example.subcomponentdaggerexample.ui.secondActivity.FragmentTwo"
+        android:label="FragmentTwo" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.subcomponentdaggerexample.ui.secondActivity.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentOne"
+            app:destination="@id/fragmentOne" />
+        <action
+            android:id="@+id/action_homeFragment_to_fragmentTwo"
+            app:destination="@id/fragmentTwo" />
+    </fragment>
+</navigation>

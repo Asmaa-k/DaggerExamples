@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item
+            android:id="@+id/id_main"
+            android:title="Main">
+            <menu>
+                <item
+                    android:id="@+id/id_home"
+                    android:title="Home" />
+
+            </menu>
+        </item>
+    </group>
+
+
+    <group>
+        <item
+            android:id="@+id/id_material"
+            android:title="Others">
+            <menu>
+                <item
+                    android:id="@+id/id_one"
+                    android:title="Fragment One" />
+                <item
+                    android:id="@+id/id_two"
+                    android:title="Fragment Two"/>
+            </menu>
+        </item>
+    </group>
+
+</menu>
